@@ -8,6 +8,10 @@ import blog from './blog';
 import blogCategory from './blogCategory';
 import spotlight from './spotlight';
 import spotlightCategory from './spotlightCategory';
+import topBanner from './topBanner';
+import middleBanner from './middleBanner';
+import sideBar from './sideBar';
+import shop from './shop';
 
 export const schemaTypes = [
   siteLogo,
@@ -17,5 +21,9 @@ export const schemaTypes = [
   blog,
   blogCategory,
   spotlight,
-  spotlightCategory
+  spotlightCategory,
+  topBanner,
+  middleBanner,
+  sideBar,
+  shop,
 ];
