@@ -14,6 +14,8 @@ import sideBar from './sideBar';
 import shop from './shop';
 import directory from './directory';
 import directoryCategory from './directoryCategory';
+import contact from './contact';
+import advertise from './advertise';
 
 export const schemaTypes = [
   siteLogo,
@@ -30,4 +32,7 @@ export const schemaTypes = [
   shop,
   directory,
   directoryCategory,
+  contact,
+  advertise,
+
 ];
