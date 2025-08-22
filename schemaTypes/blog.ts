@@ -2,7 +2,7 @@ import {defineType, defineField} from 'sanity';
 
 export default defineType({
   name: 'blog',
-  title: 'Blog',
+  title: 'Blog Settings',
   type: 'document',
   fields: [
     defineField({
@@ -16,6 +16,7 @@ export default defineType({
       title: 'Image',
       type: 'image',
       options: { hotspot: true },
+      validation: Rule => Rule.required(),
     }),
     defineField({
       name: 'publishedAt',
@@ -32,9 +33,28 @@ export default defineType({
     }),
     defineField({
       name: 'description',
-      title: 'Description',
+      title: 'Short Description',
       type: 'text',
       validation: Rule => Rule.required(),
+    }),
+
+    defineField({
+      name: 'body',
+      title: 'Body',
+      type: 'array',
+      of: [
+        { type: 'block' },
+        {
+          type: 'image',
+          options: { hotspot: true },
+        },
+      ],
+      validation: Rule => Rule.required(),
+    }),
+    defineField({
+      name: 'author',
+      title: 'Author',
+      type: 'string',
     }),
   ],
 });
