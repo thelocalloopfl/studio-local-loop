@@ -2,7 +2,7 @@ import {defineType, defineField} from 'sanity';
 
 export default defineType({
   name: 'spotlight',
-  title: 'Spotlight',
+  title: 'Spotlight Settings',
   type: 'document',
   fields: [
     defineField({
@@ -16,6 +16,7 @@ export default defineType({
       title: 'Image',
       type: 'image',
       options: { hotspot: true },
+      validation: Rule => Rule.required(),
     }),
     defineField({
       name: 'description',
@@ -27,6 +28,7 @@ export default defineType({
       name: 'offerText',
       title: 'Offer Text',
       type: 'string',
+      validation: Rule => Rule.required(),
     }),
     defineField({
       name: 'websiteUrl',

@@ -2,7 +2,7 @@ import {defineType, defineField} from 'sanity';
 
 export default defineType({
   name: 'directory',
-  title: 'Directory',
+  title: 'Directory Settings',
   type: 'document',
   fields: [
     defineField({

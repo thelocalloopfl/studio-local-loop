@@ -9,6 +9,7 @@ export default defineType({
       name: 'title',
       title: 'Category Title',
       type: 'string',
+      validation: Rule => Rule.required(),
     }),
   ],
 });
