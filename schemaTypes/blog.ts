@@ -40,7 +40,7 @@ export default defineType({
 
     defineField({
       name: 'body',
-      title: 'Body',
+      title: 'Blog Content',
       type: 'array',
       of: [
         { type: 'block' },
