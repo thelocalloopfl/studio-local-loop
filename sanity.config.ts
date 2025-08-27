@@ -7,7 +7,7 @@ export default defineConfig({
   name: 'default',
   title: 'Local Loop',
 
-  projectId: 'n7w5gf77',
+  projectId: 'h0p4hnwf',
   dataset: 'production',
 
   plugins: [structureTool(), visionTool()],
