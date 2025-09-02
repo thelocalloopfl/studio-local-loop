@@ -5,9 +5,9 @@ import {schemaTypes} from './schemaTypes'
 
 export default defineConfig({
   name: 'default',
-  title: 'Local Loop',
+  title: 'The Local Loop FL',
 
-  projectId: 'n7w5gf77',
+  projectId: 'h0p4hnwf', // <-- The Local Loop FL
   dataset: 'production',
 
   plugins: [structureTool(), visionTool()],
