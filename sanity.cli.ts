@@ -2,12 +2,7 @@ import {defineCliConfig} from 'sanity/cli'
 
 export default defineCliConfig({
   api: {
-    projectId: 'n7w5gf77',
-    dataset: 'production'
+    projectId: 'h0p4hnwf',   // NEW project (The Local Loop FL)
+    dataset: 'production',
   },
-  /**
-   * Enable auto-updates for studios.
-   * Learn more at https://www.sanity.io/docs/cli#auto-updates
-   */
-  autoUpdates: true,
 })
