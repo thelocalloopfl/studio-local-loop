@@ -16,6 +16,7 @@ import directory from './directory';
 import directoryCategory from './directoryCategory';
 import contact from './contact';
 import advertise from './advertise';
+import user from './user';
 
 export const schemaTypes = [
   siteLogo,
@@ -34,5 +35,5 @@ export const schemaTypes = [
   directoryCategory,
   contact,
   advertise,
-
+  user,
 ];
