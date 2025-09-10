@@ -17,6 +17,7 @@ import directoryCategory from './directoryCategory';
 import contact from './contact';
 import advertise from './advertise';
 import user from './user';
+import stripeConfig from './stripeConfig';
 
 export const schemaTypes = [
   siteLogo,
@@ -36,4 +37,5 @@ export const schemaTypes = [
   contact,
   advertise,
   user,
+  stripeConfig,
 ];
