@@ -15,17 +15,25 @@
     "sanity"
   ],
   "dependencies": {
-    "@sanity/vision": "^4.3.0",
+    "@sanity/client": "^7.11.0",
+    "@sanity/export": "^4.0.1",
+    "@sanity/icons": "^3.7.4",
+    "@sanity/ui": "^3.0.14",
+    "@sanity/vision": "^4.7.0",
+    "connect": "^3.7.0",
+    "dotenv": "^17.2.2",
+    "h3": "^1.15.4",
     "react": "^19.1",
     "react-dom": "^19.1",
-    "styled-components": "^6.1.18"
+    "styled-components": "^6.1.19"
   },
   "devDependencies": {
     "@sanity/eslint-config-studio": "^5.0.2",
+    "@types/connect": "^3.4.38",
     "@types/react": "^19.1",
     "eslint": "^9.28",
     "prettier": "^3.5",
-    "sanity": "^4.3.0",
+    "sanity": "^4.7.0",
     "typescript": "^5.8"
   },
   "prettier": {
@@ -33,5 +41,8 @@
     "printWidth": 100,
     "bracketSpacing": false,
     "singleQuote": true
+  },
+  "overrides": {
+    "fsevents": "0.0.0"
   }
 }
