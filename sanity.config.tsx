@@ -10,7 +10,7 @@ import BackupTool from './components/BackupTool';
 
 export default defineConfig({
   name: 'default',
-  title: 'My Sanity Project',
+  title: 'Local Loop FL',
 
   projectId: 'h0p4hnwf',
   dataset: 'production',
