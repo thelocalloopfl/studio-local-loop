@@ -19,9 +19,7 @@ const BackupTool = () => {
   const handleBackup = async () => {
     setIsLoading(true);
     try {
-      const response = await fetch(
-        `${process.env.SITE_BASE_URL}/api/backup`
-      );
+      const response = await fetch("http://localhost:3000/api/backup");
       if (!response.ok) {
         throw new Error(`Backup failed: ${response.statusText}`);
       }
