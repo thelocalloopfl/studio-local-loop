@@ -15,13 +15,12 @@ import { DownloadIcon } from "@sanity/icons";
 const BackupTool = () => {
   const [isLoading, setIsLoading] = useState(false);
   const toast = useToast();
-
   const handleBackup = async () => {
     setIsLoading(true);
-    console.log(`link : ${process.env.SITE_BASE_URL}/api/backup`)
+
     try {
       const response = await fetch(
-        `${process.env.SITE_BASE_URL}/api/backup`
+        `${import.meta.env.SANITY_STUDIO_SITE_BASE_URL}/api/backup`
       );
       if (!response.ok) {
         throw new Error(`Backup failed: ${response.statusText}`);
