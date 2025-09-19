@@ -12,7 +12,7 @@ export default defineConfig({
   name: 'default',
   title: 'Local Loop FL',
 
-  projectId: process.env.NEXT_PUBLIC_SANITY_PROJECT_ID as string,
+  projectId: 'h0p4hnwf',
   dataset: 'production',
 
  plugins: [
