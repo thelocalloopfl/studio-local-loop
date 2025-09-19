@@ -20,7 +20,7 @@ const BackupTool = () => {
     setIsLoading(true);
     try {
       const response = await fetch(
-        `${process.env.NEXT_PUBLIC_SITE_BASE_URL}/api/backup`
+        `${process.env.SITE_BASE_URL}/api/backup`
       );
       if (!response.ok) {
         throw new Error(`Backup failed: ${response.statusText}`);
