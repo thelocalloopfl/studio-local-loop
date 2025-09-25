@@ -6,7 +6,10 @@ export const deskStructure = (S: StructureBuilder) =>
     .items([
       // Show all docs except StripeConfig
       ...S.documentTypeListItems().filter(
-        (item) => item.getId() !== 'stripeConfig'
+        (item) => {
+          const id = item.getId();
+          return !id || !['stripeConfig', 'sociallinks'].includes(id);
+        }
       ),
 
       // StripeConfig singleton
@@ -17,5 +20,15 @@ export const deskStructure = (S: StructureBuilder) =>
             .id('stripeConfig')
             .schemaType('stripeConfig')
             .documentId('stripeConfig') // fixed ID → singleton
+        ),
+
+        // SocialLinks singleton
+      S.listItem()
+        .title('Social Links')
+        .child(
+          S.editor()
+            .id('sociallinks')
+            .schemaType('sociallinks')
+            .documentId('sociallinks') // fixed ID → singleton
         ),
     ])
