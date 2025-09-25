@@ -1,5 +1,3 @@
-
-
 import siteLogo from './siteLogo';
 import bannerSection from './bannerSection';
 import event from './event';
@@ -18,6 +16,7 @@ import contact from './contact';
 import advertise from './advertise';
 import user from './user';
 import stripeConfig from './stripeConfig';
+import socialLink from './socialLink';
 
 export const schemaTypes = [
   siteLogo,
@@ -38,4 +37,5 @@ export const schemaTypes = [
   advertise,
   user,
   stripeConfig,
+  socialLink,
 ];
