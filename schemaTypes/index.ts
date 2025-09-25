@@ -16,7 +16,8 @@ import contact from './contact';
 import advertise from './advertise';
 import user from './user';
 import stripeConfig from './stripeConfig';
-import socialLink from './socialLink';
+import sociallinks from './sociallinks';
+
 
 export const schemaTypes = [
   siteLogo,
@@ -37,5 +38,5 @@ export const schemaTypes = [
   advertise,
   user,
   stripeConfig,
-  socialLink,
+  sociallinks,
 ];
